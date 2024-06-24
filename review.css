@@ -1,0 +1,164 @@
+@font-face {
+    font-family:shinchan ;
+    src: url(./Poppins-Medium.ttf);
+}
+
+
+*{
+    font-family: shinchan;
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+html,body{
+   height: 100%;
+   width: 100%;
+   
+    background-image: linear-gradient(to right,lavender,pink);
+}
+#main{
+    background-image: linear-gradient(to right,lavender,pink); 
+}
+#first{
+    background-image: linear-gradient(to right,lavender,pink);
+}
+svg{
+    height: 30px;
+    width: 30px;
+    align-items: center;
+}
+svg:hover{
+    color:red;
+cursor:pointer;
+}
+nav {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+li{
+padding: 20px;
+}
+a{
+    text-align: center;
+    display: block;
+    color: black;
+    margin:10px;
+    text-decoration: none;
+    font-size: 1rem;
+    padding:1rem 0px;
+}
+a:hover{
+    color: white;
+    text-decoration: none;
+    font-weight: 600;}
+    
+h1{
+    text-align: center;
+}
+.svg1{
+    color: yellow;
+    width:20px;
+    height: 20px;
+}
+.card1{
+    border: 1px solid black;
+    width: 300px;
+    height: 400px;
+    
+    align-items: center;
+    padding: 20px 20px;
+    box-shadow: 5px 5px 10px grey;
+    
+}
+section{
+    display: flex;
+    justify-content: space-between;
+    margin:100px;
+}
+.hemalatha{
+    display: flex;
+    position: relative;
+    top: 10px;
+
+}
+.hemalatha h2{
+    font-size: 17px;
+}
+.hemalatha img{
+    width: 50px;
+    height: 50px;
+    margin: 10px;
+    border-radius: 50%;
+}
+.hello{
+    text-align: justify;
+    padding: 10px 10px;
+    font-style: italic;
+}
+@media (max-width: 1024px) {
+    section {
+        flex-direction: column;
+        margin: 50px;
+        align-items: center;
+    }
+
+    .card1 {
+        width: 90%;
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+    }
+
+    section {
+        margin: 20px;
+    }
+
+    .card1 {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .hemalatha {
+        flex-direction: column;
+        align-items: center;
+        top: 0;
+    }
+
+    .hemalatha img {
+        width: 70px;
+        height: 70px;
+    }
+
+    .hello {
+        padding: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    nav {
+        justify-content: center;
+    }
+
+    .card1 {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .hemalatha h2 {
+        font-size: 15px;
+    }
+
+    .hemalatha img {
+        width: 50px;
+        height: 50px;
+    }
+
+    .hello {
+        padding: 10px;
+    }
+}
